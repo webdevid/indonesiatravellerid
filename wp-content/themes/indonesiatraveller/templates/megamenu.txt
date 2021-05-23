@@ -1,0 +1,119 @@
+<style>
+  .megamenu-aside img {
+    height: 365px;
+  }
+
+  @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .megamenu-aside img {
+      height: 390px;
+    }
+  }
+</style>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="menu-list_group">
+            <a href="/about">
+              <h3>About CIFOR-ICRAF</h3>
+            </a>
+            <ul class="menu-list">
+              <li><a href="/about">Challenges</a></li>
+              <li><a href="/about">Opportunities</a></li>
+              <li><a href="/about">Approaches</a></li>
+              <li><a href="/about">Leadership</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="menu-list_group">
+            <a href="/about/board-of-trustees/">
+              <h3>Board of trustees</h3>
+            </a>
+            <ul class="menu-list">
+              <li><a href="/about/board-of-trustees/">About Board of Trustees</a></li>
+              <li><a href="/about/board-of-trustees/">Chairman and members</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="menu-list_group">
+            <a href="/about/strategy/">
+              <h3>Institutional documents</h3>
+            </a>
+            <ul class="menu-list">
+              <li><a href="/about/strategy/">Strategy</a></li>
+              <li><a href="/about/privacy-policy">Privacy policy</a></li>
+              <li><a href="/about/terms-of-use">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="menu-list_group">
+            <a href="/about/partners/">
+              <h3>Partner</h3>
+            </a>
+            <ul class="menu-list">
+              <li><a href="/about/partners#funding">Funding partners</a></li>
+              <li><a href="/about/partners#strategic">Strategic partners</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="menu-list_group">
+            <a href="/about/leadership/">
+              <h3>Leadership</h3>
+            </a>
+            <ul class="menu-list">
+              <li><a href="/about/leadership#integrated-leadership-team">Integrated Leadership Team</a></li>
+              <li><a href="/about/leadership#management">Management</a></li>
+              <li><a href="/about/leadership#theme-leaders">Theme Leaders</a></li>
+              <li><a href="/about/leadership#regional-coordinators">Regional Coordinators</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="menu-list_group">
+            <a href="/about/contact-us/">
+              <h3>Contact us</h3>
+            </a>
+            <ul class="menu-list">
+              <li>Headquarters</li>
+              <li>Hub offices</li>
+              <li>Regional programmes</li>
+              <li>Other locations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a class="anonym-report" href="/about/anonymous-reporting-hotline/">ANONYMOUS REPORTING HOTLINE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="megamenu-aside  d-flex align-items-end">
+        <a href="/about/strategy/">
+          <div class="aside-bg">
+            <img src="https://cifor-icraf.wpexpert.id/wp-content/uploads/2021/04/39673390652_8a1f6d14d4_k-1.jpg">
+          </div>
+          <div class="mega-aside-text">
+
+            <span>CIFOR-ICRAF</span>
+            <h4>2020-2030 Strategy</h4>
+
+          </div>
+          <div class="mega-aside_link">
+
+            <i class="bi bi-arrow-right middle"></i>
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "htmlburger/carbon-fields": "^3.2",
+        "mobiledetect/mobiledetectlib": "^2.8"
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "cifor-icraf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dodihidayatullah@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-cssnano": "^1.1.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-refresh": "^1.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "node-sass": "^4.14.1"
+  }
+}

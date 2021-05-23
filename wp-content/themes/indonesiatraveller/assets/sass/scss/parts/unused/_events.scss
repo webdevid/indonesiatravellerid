@@ -1,0 +1,80 @@
+.event{
+    &-subsection{
+        &-title{
+            text-transform: uppercase;
+            color:#adadad;
+            font-size: 17px;
+            font-weight: 700;
+            margin:40px 0px;
+            letter-spacing: 1px;
+        }
+        &-content{
+           &._logo{
+            img{
+                max-height: 75px;
+            }
+           }
+        }
+
+        &._speaker{}
+        &._moderator{}
+        &._host{}
+        &._partner{}
+    }
+}
+
+.subsection{
+    &-side{
+        h4{
+            text-transform: uppercase;
+            font-size:18px;
+
+            letter-spacing: 1px;
+        }
+        p{
+            color:#adadad;
+        }
+    }
+    &-content{
+        padding-right:20px;
+        h1,h2{
+            line-height: 1.4em;
+            margin:0px 0px 25px 0px;
+        }
+    }
+}
+.session{
+    &-agenda{
+        margin-top:40px;
+    }
+    &-tab{
+        &-content{
+            padding:50px 0px;
+        }
+    }
+
+    &-item{
+        border-bottom:1px solid #ddd;
+        padding:20px 0px 40px 0px;
+        margin:0px 0px 40px 0px;
+        h1{
+            line-height: 1.4em;
+            margin:15px 0px 25px 0px;
+        }
+
+        .speaker{
+            &-item{
+                font-size:17px;
+                margin-bottom:20px;
+                margin-right: 15px;
+                img{ margin-bottom:15px;}
+                h4{ font-size:20px;}
+                p{}
+            }
+        }
+    }
+
+    &-title{
+        padding:0px 60px 30px 0px;
+    }
+}
