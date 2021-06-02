@@ -30,7 +30,14 @@ $column = isset($block['column']) ? $block['column'] : 2;
             $numOfCols = $column;
             $rowCount = 0;
             $bootstrapColWidth = 12 / $numOfCols;
-            echo '<div class="row">';
+
+            if($column > 3){
+
+                echo '<div class="row post-items row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">';
+            }else{
+                echo '<div class="row post-items">';
+            }
+
 
             $blocks = array(
                 'post_type'=>array('post'),
@@ -53,7 +60,11 @@ $column = isset($block['column']) ? $block['column'] : 2;
                         'd_link'=> get_the_permalink()
                     );
 
-                    echo '<div class="col-lg-'.$bootstrapColWidth,' d-flex align-items-stretch">';
+                    if($column > 3){
+                        echo '<div class="col d-flex align-items-stretch">';
+                    }else{
+                        echo '<div class="col-lg-'.$bootstrapColWidth,' d-flex align-items-stretch">';
+                    }
                             wpe_block_part('tpl-post', $result, $class, $block);
                     echo '</div>';
 

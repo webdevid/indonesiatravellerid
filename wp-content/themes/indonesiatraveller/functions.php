@@ -471,3 +471,39 @@ function my_deregister_scripts(){
 	wp_dequeue_script( 'wp-embed' );
 }
 add_action( 'wp_footer', 'my_deregister_scripts' );
+
+
+add_filter('allowed_block_types', function($block_types, $post) {
+	$allowed = [
+		'core/image',
+		'core/paragraph',
+		'core/heading',
+		'core/list',
+		'core/html',
+		'core/text-columns',
+		'carbon-fields/megamenu-box',
+		'carbon-fields/megamenu-box-with-options'
+	];
+	if ($post->post_type == 'destination' OR $post->post_type == 'attraction' OR $post->post_type == 'directory' OR $post->post_type == 'story' OR $post->post_type == 'experience' OR $post->post_type == 'event') {
+		return $allowed;
+	}
+	return $block_types;
+}, 10, 2);
+
+function fire_theme_support() {
+    remove_theme_support('core-block-patterns');
+}
+
+add_action('after_setup_theme', 'fire_theme_support');
+
+// add_action('init', 'removeCorePatterns');
+
+// function removeCorePatterns() {
+//     remove_theme_support('core-block-patterns');
+// 	unregister_block_pattern_category('buttons');
+// 	unregister_block_pattern_category('columns');
+// 	unregister_block_pattern_category('gallery');
+// 	unregister_block_pattern_category('header');
+// 	unregister_block_pattern_category('text');
+// 	unregister_block_pattern_category('uncategorized');
+// }

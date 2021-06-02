@@ -4,7 +4,11 @@ $data   = $block;
 $size = array('400', '300');
 $image_p = wp_get_attachment_image( $data['d_image'], $size, TRUE, array( "class" => "img-responsive" ) );
 ?>
-<div class="post-item <?php echo $class;?>">
+<div class="post-item <?php echo $class; if($bo['show_author']!=''){ echo '-author'; }?>">
+    <div class="post-item_group">
+    <div class="post-item_action">
+        <a href="#" title="Save it later"><i class="bi bi-bookmark-fill"></i></a>
+    </div>
     <?php
     if($bo['show_image']!='')
     {
@@ -19,6 +23,7 @@ $image_p = wp_get_attachment_image( $data['d_image'], $size, TRUE, array( "class
         <?php
     }
     ?>
+
     <div class="post-item_text">
     <?php
         //if($bo['show_label']!='')
@@ -38,9 +43,11 @@ $image_p = wp_get_attachment_image( $data['d_image'], $size, TRUE, array( "class
         }
         if($bo['show_author']!='')
         {
+            /*
             ?>
                 <span class="meta-author"><a href="#" title="<?php echo $data['d_title'];?>"><?php echo $data['d_author']; ?></a></span>
             <?php
+            */
         }
         if($bo['show_excerpt']!='')
         {
@@ -60,5 +67,22 @@ $image_p = wp_get_attachment_image( $data['d_image'], $size, TRUE, array( "class
         }
         ?>
 
+
+
     </div>
+    </div>
+    <?php
+    if(trim($class)=='-grid'){
+        if($bo['show_author']!='')
+        {
+            ?>
+            <div class="post-item_author">
+                <div class="post-item_author_thumb"><i class="bi bi-person-circle"></i></div>
+                <div class="post-item_author_name">Boy William</div>
+            </div>
+            <?php
+        }
+    }
+    ?>
+
 </div>

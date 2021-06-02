@@ -89,7 +89,9 @@ body{
     font-size: var(--text-base-size);
     font-family: 'Open sans';
     color: $bodygray;
+    overflow-x:hidden;
 }
+
 
 h1,h2,h3,h4,h5,h6{
     color:$titlegray;
@@ -122,6 +124,57 @@ p {
         border:1px solid #e0e0e0;
         border-radius: 3px;
         width: 100%;
+
+        &_action{
+            position:absolute;
+            right:10px;
+            top:10px;
+            z-index:99;
+
+            a{
+                display: inline-block;
+                color: $white;
+                font-size:15px;
+                background-color:$white;
+                width:30px;
+                height:30px;
+                text-align: center;
+                border-radius: 3px;
+                line-height: 30px;
+
+                .bi{
+                    color:$lightgray;
+                }
+
+                &:hover{
+                    background-color: $red;
+                    .bi{
+                        color:$white;
+                    }
+                }
+            }
+        }
+
+        &_author{
+            visibility: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            border-top:1px solid #ddd;
+            position:relative;
+            padding:5px 20px;
+            &_thumb{
+                margin-right:10px;
+                .bi{
+                    font-size:25px;
+                }
+
+            }
+            &_name{
+                font-size:12px;
+                line-height: 37px;
+            }
+        }
 
         &:hover{
             box-shadow:0 0.125rem 0.25rem rgba(0,0,0,0.08);
@@ -280,6 +333,17 @@ p {
             width: 100%;
             background-color: $white;
 
+            &.-author{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+
+            .post-item_author{
+                visibility: visible;
+            }
+
             &::after{
                 position: absolute;
                 content: ' ';
@@ -370,13 +434,18 @@ p {
         }
 
         &.-hero{
-            background-color: white;
+            background-color: transparent;
             border-radius: 0px;
             margin-bottom:0px;
+            border:0px;
+            border-top:1px solid #ddd;
             .post-item{
                 &_text{
                     h1{
                         font-size:20px;
+                        a{
+                            color:$white
+                        }
                     }
                 }
             }
@@ -473,14 +542,14 @@ p {
             color: $bodygray;
 
             .bi{
-                padding-left:5px;
+                padding-left:15px;
                 color:$red;
                 transition: 0.15s all ease;
             }
 
             &:hover{
                 .bi{
-                    padding-left:2px;
+                    padding-left:12px;
                     padding-right:3px;
                     color:$red;
                 }

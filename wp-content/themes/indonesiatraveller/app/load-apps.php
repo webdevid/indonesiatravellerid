@@ -4,6 +4,7 @@
 //require get_template_directory() . '/app/includes/class/minify-html.php';
 
 // helper
+require get_template_directory() . '/app/includes/helpers/search.php' ;
 require get_template_directory() . '/app/includes/helpers/dev.php' ;
 require get_template_directory() . '/app/includes/helpers/menu.php' ;
 require get_template_directory() . '/app/includes/helpers/blocks.php' ;

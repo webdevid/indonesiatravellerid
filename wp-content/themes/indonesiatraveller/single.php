@@ -27,8 +27,6 @@ $enable_hero = isset($meta['_enable_hero']) ? $meta['_enable_hero'] : '';
                 </div>
 			</div>
 		</div>
-
-
         <?php
             get_template_part( 'templates/parts/content');
         ?>
