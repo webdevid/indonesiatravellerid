@@ -68,7 +68,8 @@
 
     .post-item_more,
     .post-item_author,
-    .post-item_action{
+    .post-item_action,
+    .meta-date{
         display: none;
     }
 
@@ -119,6 +120,11 @@
                 .post-item{
 
                     &_thumb{
+                        width:30%;
+                        float:left;
+                        position:absolute;
+                        height:100%;
+                        overflow: hidden;
                         img{
                             width:100%;
                             height:100%;
@@ -128,6 +134,10 @@
                         }
                     }
                     &_text{
+
+                        float:right;
+                        width:calc(70% - 10px);
+
                         h1{
                             font-size:16px;
                         }

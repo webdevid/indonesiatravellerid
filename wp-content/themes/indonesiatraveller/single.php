@@ -13,16 +13,16 @@ $enable_hero = isset($meta['_enable_hero']) ? $meta['_enable_hero'] : '';
             wpe_template_part('_page-hero',$meta);
         }
         ?>
-        <div class="container border-sm-bottom page-section-meta mb-3 mb-lg-0">
+        <div class="container border-sm-bottom page-section-meta">
 			<div class="row">
 				<div class="col-lg-8">
                     <?php
-                    echo wpe_breadcrumbs();
+                    //echo wpe_breadcrumbs();
                     ?>
 				</div>
                 <div class="col-lg-4 text-end">
                     <?php
-                    wpe_share_link(get_the_title(), get_the_permalink(), 1);
+                    //wpe_share_link(get_the_title(), get_the_permalink(), 1);
                     ?>
                 </div>
 			</div>

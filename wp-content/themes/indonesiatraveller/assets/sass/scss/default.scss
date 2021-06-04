@@ -107,7 +107,7 @@ p {
     font-size: 19px;
     font-weight: 400;
     letter-spacing: 0.45px;
-    margin-right: 25px;
+    margin-right: 0px;//25px;
     overflow-wrap:break-word;
     text-size-adjust:100%;
 }
@@ -469,7 +469,7 @@ p {
         position: relative;
         margin-bottom:30px;
         min-height: 400px;
-        padding:100px 0px 100px 0px;
+        padding:0px;//100px 0px 100px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -628,6 +628,10 @@ p {
                 }
             }
         }
+    }
+
+    .post-item_text{
+        padding:20px 0px;
     }
 }
 
