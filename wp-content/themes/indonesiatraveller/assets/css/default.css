@@ -7752,6 +7752,10 @@ p {
           text-size-adjust: 100%;
 }
 
+.entry-content {
+  margin-right: 70px;
+}
+
 #header {
   background: var(--bg-dark);
   color: var(--color-light);

@@ -112,6 +112,13 @@ p {
     text-size-adjust:100%;
 }
 
+.entry{
+    &-content{
+        margin-right:70px;
+    }
+}
+
+
 @import 'parts/header';
 @import 'parts/menu';
 @import 'parts/search';

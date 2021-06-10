@@ -44,7 +44,7 @@
             <!-- <div class="col-12 col-lg-2 col-xl-2">
             </div> -->
             <div class="col-12 col-lg-8 col-xl-8">
-
+                <div class="entry-content">
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non convallis nunc. Fusce scelerisque lacinia leo ut semper. Aliquam eget massa non purus venenatis ultricies ut cursus lorem. Aliquam egestas sed lorem eu bibendum. Nulla ac maximus lectus. In sed egestas ligula. Etiam consequat erat erat, eget pulvinar magna accumsan et. Nullam pretium accumsan odio non vulputate. Vestibulum faucibus ipsum turpis, et tincidunt libero faucibus eu. Vivamus lobortis libero a lorem dignissim, eget interdum ex tempor. Pellentesque a consectetur tortor. Sed porta eleifend magna quis mollis. Aenean tincidunt, nisl ac aliquam pharetra, lectus enim pulvinar est, auctor lacinia nulla ipsum vitae velit.
                     </p>
@@ -75,18 +75,13 @@
                     <p>
                     Duis lobortis nisl vel fringilla vehicula. Praesent enim dui, cursus non tellus ut, cursus porttitor purus. Mauris interdum tellus ut orci facilisis, in accumsan dolor commodo. Phasellus at vehicula purus. Pellentesque pellentesque purus auctor, euismod risus eget, pulvinar ante. Morbi gravida lobortis nulla eget molestie. Mauris aliquet porta finibus. Aenean aliquet arcu eu est semper commodo.
                     </p>
+                </div>
             </div>
             <div class="col-12 col-lg-4 col-xl-4">
 
                 <div class="row section-row">
                     <div class="col-lg-12 col-xl-12 col-12">
                         <div class="section-title text-left">Latest posts</div>
-                    </div>
-                </div>
-                <div class="post-item -no-thumb">
-                    <div class="post-item_text">
-                        <span class="meta-category"><a href="#">Travel news</a></span>
-                        <h1><a href="#">Hit the Appalachian Trail as it welcomes back long-distance trekkers</a></h1>
                     </div>
                 </div>
                 <div class="post-item -no-thumb">
